@@ -89,11 +89,23 @@ class ViewController: UIViewController, WCSessionDelegate {
      }
      
      func sendComplicationTapped() {
+     
+          let session = WCSession.default()
           
+          //check that we are good to send
           
-          
-          
-          
+          if session.activationState == .activated && session.isComplicationEnabled {
+               
+               //pick a random number and wrap it up in a dictionary
+               let randomNumber = String(arc4random_uniform(10))
+               let message = ["number": randomNumber]
+               
+               //transfer it across using a high-priority send
+               session.transferCurrentComplicationUserInfo(message)
+               
+               //output how many high-priority sends we have left
+               print("attempt to send complication data. Remaining transfers: \(session.remainingComplicationUserInfoTransfers)")
+          }
      }
      
      func sendFileTapped() {

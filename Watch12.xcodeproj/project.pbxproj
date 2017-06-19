@@ -567,6 +567,7 @@
 				273B32741EF41D690036C163 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		273B32761EF41D690036C163 /* Build configuration list for PBXNativeTarget "Watch12 WatchKit App" */ = {
 			isa = XCConfigurationList;
@@ -575,6 +576,7 @@
 				273B32781EF41D690036C163 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		273B327A1EF41D690036C163 /* Build configuration list for PBXNativeTarget "Watch12" */ = {
 			isa = XCConfigurationList;
@@ -583,6 +585,7 @@
 				273B327C1EF41D690036C163 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
